@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "serverName": {
+        "value": "SecurityServerBDD"
+      },
+      "administratorLogin": {
+        "value": "pendule"
+      },
+      "administratorLoginPassword": {
+        "value": "Azerty@1234!"
+      },
+      "sqlDBName": {
+          "value": "DBSecurityServer"
+      },
+      "location": {
+          "value": "northeurope"
+      },
+      "publicNetworkAccess":{
+         "value" : "Enabled"
+      },
+      "administrators": {
+          "value": {
+            "administratorType": "activeDirectory",
+            "login": "2024.DI2.P2.G5.2@diiage.org",
+            "sid": "a02a15d4-a376-4f1d-b93e-41cfc13579f5",
+            "tenantId": "14bc5219-40ca-4d62-a8e4-7c97c1236349",
+            "azureADOnlyAuthentication": true,
+            "principalType": "User"
+          }
+      }
+    }
+  }
